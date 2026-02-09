@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumi Grid Logo Preview</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #1e1e1e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .logo-container {
+            width: 512px;
+            height: 512px;
+            background-color: #0f172a;
+            /* Slate 900 */
+            border-radius: 96px;
+            /* Rounded corners for app icon look */
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+            padding: 24px;
+            background: rgba(255, 255, 255, 0.05);
+            /* Slight highlight */
+            border-radius: 24px;
+        }
+
+        .cell {
+            width: 80px;
+            height: 80px;
+            background-color: #1e293b;
+            /* Slate 800 */
+            border: 2px solid #334155;
+            /* Slate 700 */
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .orb {
+            width: 50%;
+            height: 50%;
+            border-radius: 50%;
+            box-shadow: 0 0 15px currentColor;
+        }
+
+        .orb-cyan {
+            background-color: #22d3ee;
+            color: #22d3ee;
+        }
+
+        .orb-magenta {
+            background-color: #e879f9;
+            color: #e879f9;
+        }
+
+        .orb-yellow {
+            background-color: #facc15;
+            color: #facc15;
+        }
+
+        .title {
+            margin-top: 30px;
+            font-family: 'Segoe UI', sans-serif;
+            font-weight: 700;
+            font-size: 48px;
+            color: #f8fafc;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="logo-container">
+        <div class="grid">
+            <div class="cell">
+                <div class="orb orb-cyan"></div>
+            </div>
+            <div class="cell"></div>
+            <div class="cell">
+                <div class="orb orb-magenta"></div>
+            </div>
+            <div class="cell"></div>
+            <div class="cell">
+                <div class="orb orb-yellow"></div>
+            </div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell">
+                <div class="orb orb-cyan"></div>
+            </div>
+            <div class="cell"></div>
+        </div>
+        <div class="title">LUMI GRID</div>
+    </div>
+</body>
+
+</html>
