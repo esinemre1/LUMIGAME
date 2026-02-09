@@ -1,20 +1,75 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# LUMI GRID 🧩
 
-# Run and deploy your AI Studio app
+**Mantık • Strateji • Hassasiyet**
 
-This contains everything you need to run your app locally.
+LUMI GRID, modern ve şık arayüze sahip, zekanızı zorlayacak bir mantık bulmaca oyunudur. Sudoku ve Mayın Tarlası gibi oyunlardan esinlenen kuralları ile her seviyede farklı bir meydan okuma sunar.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1mt8hcRuSEH0ZUqtbBKD0AzazYk9Kt-wf
+![Lumi Grid Screenshot](https://via.placeholder.com/1200x600?text=LUMI+GRID+Preview)
 
-## Run Locally
+## 🌟 Özellikler
 
-**Prerequisites:**  Node.js
+- **Sonsuz Oynanış**: Tohum (seed) tabanlı algoritma ile üretilen 200+ benzersiz seviye.
+- **İki Dil Desteği**: Türkçe (TR) ve İngilizce (EN).
+- **Zorlayıcı Kurallar**:
+  - Her satır, sütun ve renkli bölgede sadece bir küre olmalı.
+  - Küreler birbirine (çapraz dahil) değemez.
+  - Numaralı tarayıcılar etrafındaki küre sayısını gösterir.
+- **Modern Tasarım**: Glassmorphism efektleri, akıcı animasyonlar ve şık renk paleti.
+- **Yardımcı Araçlar**: Akıllı ipuçları ve hata denetimi.
 
+## 🚀 Kurulum ve Çalıştırma
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Projeyi yerel ortamınızda çalıştırmak için aşağıdaki adımları izleyin.
+
+### Gereksinimler
+- Node.js (v18 veya üzeri)
+- npm veya yarn
+
+### Adımlar
+
+1. **Depoyu klonlayın:**
+   ```bash
+   git clone https://github.com/esinemre1/LUMIGAME.git
+   cd LUMIGAME
+   ```
+
+2. **Bağımlılıkları yükleyin:**
+   ```bash
+   npm install
+   ```
+
+3. **Geliştirme sunucusunu başlatın:**
+   ```bash
+   npm run dev
+   ```
+   Tarayıcınızda `http://localhost:5173` (veya terminalde belirtilen port) adresine gidin.
+
+## 📱 APK Oluşturma (Android)
+
+Bu proje Capacitor kullanılarak Android uygulamasına dönüştürülebilir.
+
+1. **Projeyi derleyin:**
+   ```bash
+   npm run build
+   ```
+
+2. **Capacitor ile senkronize edin:**
+   ```bash
+   npx cap sync
+   ```
+
+3. **Android Studio'da açın:**
+   ```bash
+   npx cap open android
+   ```
+
+## 🛠️ Teknolojiler
+
+- **React 19**
+- **TypeScript**
+- **Vite**
+- **Tailwind CSS**
+
+## 📄 Lisans
+
+Bu proje [MIT Lisansı](LICENSE) altında lisanslanmıştır.
